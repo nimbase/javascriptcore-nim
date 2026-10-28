@@ -40,8 +40,6 @@
 - [x] Test suite (51 tests: eval, scripts, callbacks, classes, typed arrays,
   exceptions, JSON)
 - [ ] Linux support via WebKitGTK (`jscPkg` hook present, unverified)
-- [ ] Objective-C API bindings (`JSContext`, `JSValue`, `JSManagedValue`;
-  macOS only)
 - [ ] High-level idiomatic layer (GC-managed values, exceptions as Nim errors)
 - [ ] Windows support (not planned)
 
