@@ -1,7 +1,10 @@
-# name: test
-# on: [push, pull_request]
-# jobs:
-#   test:
-#     uses: nimbase/setup-nim-action/.github/workflows/test.yml@main
-#     with:
-#       nim-version: stable
+name: test
+on: [push, pull_request]
+jobs:
+  test:
+    uses: nimbase/setup-nim-action/.github/workflows/test.yml@main
+    with:
+      nim-version: stable
+      # macOS only: the bindings link the system JavaScriptCore framework.
+      # Linux via WebKitGTK is planned. macos-15 is ARM, macos-15-intel is Intel.
+      os: '[{"os":"macos-15"},{"os":"macos-15-intel"}]'
