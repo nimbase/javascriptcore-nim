@@ -1,0 +1,3 @@
+nimTitle	javascriptcore	javascriptcore.html	module javascriptcore		0
+nim	jscStaticLib	javascriptcore.html#jscStaticLib	const jscStaticLib		37
+nim	jscIncludeDir	javascriptcore.html#jscIncludeDir	const jscIncludeDir		42

@@ -1,0 +1,15 @@
+nimTitle	jscontextref	javascriptcore/jscontextref.html	module javascriptcore/jscontextref		0
+nim	JSContextGroupCreate	javascriptcore/jscontextref.html#JSContextGroupCreate	proc JSContextGroupCreate(): JSContextGroupRef		15
+nim	JSContextGroupRetain	javascriptcore/jscontextref.html#JSContextGroupRetain,JSContextGroupRef	proc JSContextGroupRetain(group: JSContextGroupRef): JSContextGroupRef		18
+nim	JSContextGroupRelease	javascriptcore/jscontextref.html#JSContextGroupRelease,JSContextGroupRef	proc JSContextGroupRelease(group: JSContextGroupRef)		21
+nim	JSGlobalContextCreate	javascriptcore/jscontextref.html#JSGlobalContextCreate,JSClassRef	proc JSGlobalContextCreate(globalObjectClass: JSClassRef): JSGlobalContextRef		24
+nim	JSGlobalContextCreateInGroup	javascriptcore/jscontextref.html#JSGlobalContextCreateInGroup,JSContextGroupRef,JSClassRef	proc JSGlobalContextCreateInGroup(group: JSContextGroupRef;\n                             globalObjectClass: JSClassRef): JSGlobalContextRef		28
+nim	JSGlobalContextRetain	javascriptcore/jscontextref.html#JSGlobalContextRetain,JSGlobalContextRef	proc JSGlobalContextRetain(ctx: JSGlobalContextRef): JSGlobalContextRef		33
+nim	JSGlobalContextRelease	javascriptcore/jscontextref.html#JSGlobalContextRelease,JSGlobalContextRef	proc JSGlobalContextRelease(ctx: JSGlobalContextRef)		36
+nim	JSContextGetGlobalObject	javascriptcore/jscontextref.html#JSContextGetGlobalObject,JSContextRef	proc JSContextGetGlobalObject(ctx: JSContextRef): JSObjectRef		39
+nim	JSContextGetGroup	javascriptcore/jscontextref.html#JSContextGetGroup,JSContextRef	proc JSContextGetGroup(ctx: JSContextRef): JSContextGroupRef		42
+nim	JSContextGetGlobalContext	javascriptcore/jscontextref.html#JSContextGetGlobalContext,JSContextRef	proc JSContextGetGlobalContext(ctx: JSContextRef): JSGlobalContextRef		45
+nim	JSGlobalContextCopyName	javascriptcore/jscontextref.html#JSGlobalContextCopyName,JSGlobalContextRef	proc JSGlobalContextCopyName(ctx: JSGlobalContextRef): JSStringRef		48
+nim	JSGlobalContextSetName	javascriptcore/jscontextref.html#JSGlobalContextSetName,JSGlobalContextRef,JSStringRef	proc JSGlobalContextSetName(ctx: JSGlobalContextRef; name: JSStringRef)		51
+nim	JSGlobalContextIsInspectable	javascriptcore/jscontextref.html#JSGlobalContextIsInspectable,JSGlobalContextRef	proc JSGlobalContextIsInspectable(ctx: JSGlobalContextRef): bool		54
+nim	JSGlobalContextSetInspectable	javascriptcore/jscontextref.html#JSGlobalContextSetInspectable,JSGlobalContextRef,bool	proc JSGlobalContextSetInspectable(ctx: JSGlobalContextRef; inspectable: bool)		57

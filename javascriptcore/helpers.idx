@@ -1,0 +1,5 @@
+nimTitle	helpers	javascriptcore/helpers.html	module javascriptcore/helpers		0
+nim	newJSString	javascriptcore/helpers.html#newJSString,string	proc newJSString(s: string): JSStringRef		23
+nim	`$`	javascriptcore/helpers.html#$,JSStringRef	proc `$`(str: JSStringRef): string		27
+nim	evalScript	javascriptcore/helpers.html#evalScript,JSContextRef,string,JSObjectRef,string,int,JSValueRef	proc evalScript(ctx: JSContextRef; script: string; thisObject: JSObjectRef = nil;\n           sourceURL: string = ""; line: int = 1; exception: var JSValueRef): JSValueRef		39
+nim	withGlobalContext	javascriptcore/helpers.html#withGlobalContext.t,untyped,untyped	template withGlobalContext(ctx: untyped; body: untyped)		53

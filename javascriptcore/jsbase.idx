@@ -1,0 +1,22 @@
+nimTitle	jsbase	javascriptcore/jsbase.html	module javascriptcore/jsbase		0
+nim	jscHeader	javascriptcore/jsbase.html#jscHeader	const jscHeader		19
+nim	OpaqueJSContextGroup	javascriptcore/jsbase.html#OpaqueJSContextGroup	object OpaqueJSContextGroup		25
+nim	OpaqueJSContext	javascriptcore/jsbase.html#OpaqueJSContext	object OpaqueJSContext		27
+nim	OpaqueJSString	javascriptcore/jsbase.html#OpaqueJSString	object OpaqueJSString		29
+nim	OpaqueJSClass	javascriptcore/jsbase.html#OpaqueJSClass	object OpaqueJSClass		31
+nim	OpaqueJSPropertyNameArray	javascriptcore/jsbase.html#OpaqueJSPropertyNameArray	object OpaqueJSPropertyNameArray		33
+nim	OpaqueJSPropertyNameAccumulator	javascriptcore/jsbase.html#OpaqueJSPropertyNameAccumulator	object OpaqueJSPropertyNameAccumulator		36
+nim	OpaqueJSValue	javascriptcore/jsbase.html#OpaqueJSValue	object OpaqueJSValue		38
+nim	JSContextGroupRef	javascriptcore/jsbase.html#JSContextGroupRef	type JSContextGroupRef		41
+nim	JSContextRef	javascriptcore/jsbase.html#JSContextRef	type JSContextRef		43
+nim	JSGlobalContextRef	javascriptcore/jsbase.html#JSGlobalContextRef	type JSGlobalContextRef		45
+nim	JSStringRef	javascriptcore/jsbase.html#JSStringRef	type JSStringRef		47
+nim	JSClassRef	javascriptcore/jsbase.html#JSClassRef	type JSClassRef		49
+nim	JSPropertyNameArrayRef	javascriptcore/jsbase.html#JSPropertyNameArrayRef	type JSPropertyNameArrayRef		51
+nim	JSPropertyNameAccumulatorRef	javascriptcore/jsbase.html#JSPropertyNameAccumulatorRef	type JSPropertyNameAccumulatorRef		53
+nim	JSValueRef	javascriptcore/jsbase.html#JSValueRef	type JSValueRef		55
+nim	JSObjectRef	javascriptcore/jsbase.html#JSObjectRef	type JSObjectRef		57
+nim	JSTypedArrayBytesDeallocator	javascriptcore/jsbase.html#JSTypedArrayBytesDeallocator	type JSTypedArrayBytesDeallocator		59
+nim	JSEvaluateScript	javascriptcore/jsbase.html#JSEvaluateScript,JSContextRef,JSStringRef,JSObjectRef,JSStringRef,cint,ptr.JSValueRef	proc JSEvaluateScript(ctx: JSContextRef; script: JSStringRef;\n                 thisObject: JSObjectRef; sourceURL: JSStringRef;\n                 startingLineNumber: cint; exception: ptr JSValueRef): JSValueRef		65
+nim	JSCheckScriptSyntax	javascriptcore/jsbase.html#JSCheckScriptSyntax,JSContextRef,JSStringRef,JSStringRef,cint,ptr.JSValueRef	proc JSCheckScriptSyntax(ctx: JSContextRef; script: JSStringRef;\n                    sourceURL: JSStringRef; startingLineNumber: cint;\n                    exception: ptr JSValueRef): bool		72
+nim	JSGarbageCollect	javascriptcore/jsbase.html#JSGarbageCollect,JSContextRef	proc JSGarbageCollect(ctx: JSContextRef)		78

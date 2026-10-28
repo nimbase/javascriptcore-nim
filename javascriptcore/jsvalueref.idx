@@ -1,0 +1,46 @@
+nimTitle	jsvalueref	javascriptcore/jsvalueref.html	module javascriptcore/jsvalueref		0
+nim	JSType	javascriptcore/jsvalueref.html#JSType	enum JSType		16
+nim	JSTypedArrayType	javascriptcore/jsvalueref.html#JSTypedArrayType	enum JSTypedArrayType		26
+nim	JSRelationCondition	javascriptcore/jsvalueref.html#JSRelationCondition	enum JSRelationCondition		42
+nim	JSValueGetType	javascriptcore/jsvalueref.html#JSValueGetType,JSContextRef,JSValueRef	proc JSValueGetType(ctx: JSContextRef; value: JSValueRef): JSType		51
+nim	JSValueIsUndefined	javascriptcore/jsvalueref.html#JSValueIsUndefined,JSContextRef,JSValueRef	proc JSValueIsUndefined(ctx: JSContextRef; value: JSValueRef): bool		54
+nim	JSValueIsNull	javascriptcore/jsvalueref.html#JSValueIsNull,JSContextRef,JSValueRef	proc JSValueIsNull(ctx: JSContextRef; value: JSValueRef): bool		55
+nim	JSValueIsBoolean	javascriptcore/jsvalueref.html#JSValueIsBoolean,JSContextRef,JSValueRef	proc JSValueIsBoolean(ctx: JSContextRef; value: JSValueRef): bool		56
+nim	JSValueIsNumber	javascriptcore/jsvalueref.html#JSValueIsNumber,JSContextRef,JSValueRef	proc JSValueIsNumber(ctx: JSContextRef; value: JSValueRef): bool		57
+nim	JSValueIsString	javascriptcore/jsvalueref.html#JSValueIsString,JSContextRef,JSValueRef	proc JSValueIsString(ctx: JSContextRef; value: JSValueRef): bool		58
+nim	JSValueIsSymbol	javascriptcore/jsvalueref.html#JSValueIsSymbol,JSContextRef,JSValueRef	proc JSValueIsSymbol(ctx: JSContextRef; value: JSValueRef): bool		60
+nim	JSValueIsBigInt	javascriptcore/jsvalueref.html#JSValueIsBigInt,JSContextRef,JSValueRef	proc JSValueIsBigInt(ctx: JSContextRef; value: JSValueRef): bool		63
+nim	JSValueIsObject	javascriptcore/jsvalueref.html#JSValueIsObject,JSContextRef,JSValueRef	proc JSValueIsObject(ctx: JSContextRef; value: JSValueRef): bool		66
+nim	JSValueIsObjectOfClass	javascriptcore/jsvalueref.html#JSValueIsObjectOfClass,JSContextRef,JSValueRef,JSClassRef	proc JSValueIsObjectOfClass(ctx: JSContextRef; value: JSValueRef; jsClass: JSClassRef): bool		68
+nim	JSValueIsArray	javascriptcore/jsvalueref.html#JSValueIsArray,JSContextRef,JSValueRef	proc JSValueIsArray(ctx: JSContextRef; value: JSValueRef): bool		72
+nim	JSValueIsDate	javascriptcore/jsvalueref.html#JSValueIsDate,JSContextRef,JSValueRef	proc JSValueIsDate(ctx: JSContextRef; value: JSValueRef): bool		75
+nim	JSValueGetTypedArrayType	javascriptcore/jsvalueref.html#JSValueGetTypedArrayType,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueGetTypedArrayType(ctx: JSContextRef; value: JSValueRef;\n                         exception: ptr JSValueRef): JSTypedArrayType		78
+nim	JSValueIsEqual	javascriptcore/jsvalueref.html#JSValueIsEqual,JSContextRef,JSValueRef,JSValueRef,ptr.JSValueRef	proc JSValueIsEqual(ctx: JSContextRef; a, b: JSValueRef; exception: ptr JSValueRef): bool		82
+nim	JSValueIsStrictEqual	javascriptcore/jsvalueref.html#JSValueIsStrictEqual,JSContextRef,JSValueRef,JSValueRef	proc JSValueIsStrictEqual(ctx: JSContextRef; a, b: JSValueRef): bool		86
+nim	JSValueIsInstanceOfConstructor	javascriptcore/jsvalueref.html#JSValueIsInstanceOfConstructor,JSContextRef,JSValueRef,JSObjectRef,ptr.JSValueRef	proc JSValueIsInstanceOfConstructor(ctx: JSContextRef; value: JSValueRef;\n                               constructor: JSObjectRef;\n                               exception: ptr JSValueRef): bool		89
+nim	JSValueCompare	javascriptcore/jsvalueref.html#JSValueCompare,JSContextRef,JSValueRef,JSValueRef,ptr.JSValueRef	proc JSValueCompare(ctx: JSContextRef; left, right: JSValueRef;\n               exception: ptr JSValueRef): JSRelationCondition		94
+nim	JSValueCompareInt64	javascriptcore/jsvalueref.html#JSValueCompareInt64,JSContextRef,JSValueRef,int64,ptr.JSValueRef	proc JSValueCompareInt64(ctx: JSContextRef; left: JSValueRef; right: int64;\n                    exception: ptr JSValueRef): JSRelationCondition		98
+nim	JSValueCompareUInt64	javascriptcore/jsvalueref.html#JSValueCompareUInt64,JSContextRef,JSValueRef,uint64,ptr.JSValueRef	proc JSValueCompareUInt64(ctx: JSContextRef; left: JSValueRef; right: uint64;\n                     exception: ptr JSValueRef): JSRelationCondition		102
+nim	JSValueCompareDouble	javascriptcore/jsvalueref.html#JSValueCompareDouble,JSContextRef,JSValueRef,cdouble,ptr.JSValueRef	proc JSValueCompareDouble(ctx: JSContextRef; left: JSValueRef; right: cdouble;\n                     exception: ptr JSValueRef): JSRelationCondition		106
+nim	JSValueMakeUndefined	javascriptcore/jsvalueref.html#JSValueMakeUndefined,JSContextRef	proc JSValueMakeUndefined(ctx: JSContextRef): JSValueRef		110
+nim	JSValueMakeNull	javascriptcore/jsvalueref.html#JSValueMakeNull,JSContextRef	proc JSValueMakeNull(ctx: JSContextRef): JSValueRef		111
+nim	JSValueMakeBoolean	javascriptcore/jsvalueref.html#JSValueMakeBoolean,JSContextRef,bool	proc JSValueMakeBoolean(ctx: JSContextRef; boolean: bool): JSValueRef		112
+nim	JSValueMakeNumber	javascriptcore/jsvalueref.html#JSValueMakeNumber,JSContextRef,cdouble	proc JSValueMakeNumber(ctx: JSContextRef; number: cdouble): JSValueRef		113
+nim	JSValueMakeString	javascriptcore/jsvalueref.html#JSValueMakeString,JSContextRef,JSStringRef	proc JSValueMakeString(ctx: JSContextRef; str: JSStringRef): JSValueRef		115
+nim	JSValueMakeSymbol	javascriptcore/jsvalueref.html#JSValueMakeSymbol,JSContextRef,JSStringRef	proc JSValueMakeSymbol(ctx: JSContextRef; description: JSStringRef): JSValueRef		118
+nim	JSBigIntCreateWithDouble	javascriptcore/jsvalueref.html#JSBigIntCreateWithDouble,JSContextRef,cdouble,ptr.JSValueRef	proc JSBigIntCreateWithDouble(ctx: JSContextRef; value: cdouble;\n                         exception: ptr JSValueRef): JSValueRef		122
+nim	JSBigIntCreateWithInt64	javascriptcore/jsvalueref.html#JSBigIntCreateWithInt64,JSContextRef,int64,ptr.JSValueRef	proc JSBigIntCreateWithInt64(ctx: JSContextRef; integer: int64;\n                        exception: ptr JSValueRef): JSValueRef		126
+nim	JSBigIntCreateWithUInt64	javascriptcore/jsvalueref.html#JSBigIntCreateWithUInt64,JSContextRef,uint64,ptr.JSValueRef	proc JSBigIntCreateWithUInt64(ctx: JSContextRef; integer: uint64;\n                         exception: ptr JSValueRef): JSValueRef		130
+nim	JSBigIntCreateWithString	javascriptcore/jsvalueref.html#JSBigIntCreateWithString,JSContextRef,JSStringRef,ptr.JSValueRef	proc JSBigIntCreateWithString(ctx: JSContextRef; str: JSStringRef;\n                         exception: ptr JSValueRef): JSValueRef		134
+nim	JSValueMakeFromJSONString	javascriptcore/jsvalueref.html#JSValueMakeFromJSONString,JSContextRef,JSStringRef	proc JSValueMakeFromJSONString(ctx: JSContextRef; str: JSStringRef): JSValueRef		138
+nim	JSValueCreateJSONString	javascriptcore/jsvalueref.html#JSValueCreateJSONString,JSContextRef,JSValueRef,cuint,ptr.JSValueRef	proc JSValueCreateJSONString(ctx: JSContextRef; value: JSValueRef; indent: cuint;\n                        exception: ptr JSValueRef): JSStringRef		142
+nim	JSValueToBoolean	javascriptcore/jsvalueref.html#JSValueToBoolean,JSContextRef,JSValueRef	proc JSValueToBoolean(ctx: JSContextRef; value: JSValueRef): bool		147
+nim	JSValueToNumber	javascriptcore/jsvalueref.html#JSValueToNumber,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToNumber(ctx: JSContextRef; value: JSValueRef; exception: ptr JSValueRef): cdouble		149
+nim	JSValueToInt32	javascriptcore/jsvalueref.html#JSValueToInt32,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToInt32(ctx: JSContextRef; value: JSValueRef; exception: ptr JSValueRef): int32		153
+nim	JSValueToUInt32	javascriptcore/jsvalueref.html#JSValueToUInt32,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToUInt32(ctx: JSContextRef; value: JSValueRef; exception: ptr JSValueRef): uint32		157
+nim	JSValueToInt64	javascriptcore/jsvalueref.html#JSValueToInt64,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToInt64(ctx: JSContextRef; value: JSValueRef; exception: ptr JSValueRef): int64		161
+nim	JSValueToUInt64	javascriptcore/jsvalueref.html#JSValueToUInt64,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToUInt64(ctx: JSContextRef; value: JSValueRef; exception: ptr JSValueRef): uint64		165
+nim	JSValueToStringCopy	javascriptcore/jsvalueref.html#JSValueToStringCopy,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToStringCopy(ctx: JSContextRef; value: JSValueRef;\n                    exception: ptr JSValueRef): JSStringRef		169
+nim	JSValueToObject	javascriptcore/jsvalueref.html#JSValueToObject,JSContextRef,JSValueRef,ptr.JSValueRef	proc JSValueToObject(ctx: JSContextRef; value: JSValueRef; exception: ptr JSValueRef): JSObjectRef		173
+nim	JSValueProtect	javascriptcore/jsvalueref.html#JSValueProtect,JSContextRef,JSValueRef	proc JSValueProtect(ctx: JSContextRef; value: JSValueRef)		177
+nim	JSValueUnprotect	javascriptcore/jsvalueref.html#JSValueUnprotect,JSContextRef,JSValueRef	proc JSValueUnprotect(ctx: JSContextRef; value: JSValueRef)		180

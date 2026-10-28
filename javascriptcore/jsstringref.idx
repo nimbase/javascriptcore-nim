@@ -1,0 +1,12 @@
+nimTitle	jsstringref	javascriptcore/jsstringref.html	module javascriptcore/jsstringref		0
+nim	JSChar	javascriptcore/jsstringref.html#JSChar	type JSChar		12
+nim	JSStringCreateWithCharacters	javascriptcore/jsstringref.html#JSStringCreateWithCharacters,ptr.JSChar,csize_t	proc JSStringCreateWithCharacters(chars: ptr JSChar; numChars: csize_t): JSStringRef		18
+nim	JSStringCreateWithUTF8CString	javascriptcore/jsstringref.html#JSStringCreateWithUTF8CString,cstring	proc JSStringCreateWithUTF8CString(str: cstring): JSStringRef		22
+nim	JSStringRetain	javascriptcore/jsstringref.html#JSStringRetain,JSStringRef	proc JSStringRetain(str: JSStringRef): JSStringRef		25
+nim	JSStringRelease	javascriptcore/jsstringref.html#JSStringRelease,JSStringRef	proc JSStringRelease(str: JSStringRef)		28
+nim	JSStringGetLength	javascriptcore/jsstringref.html#JSStringGetLength,JSStringRef	proc JSStringGetLength(str: JSStringRef): csize_t		31
+nim	JSStringGetCharactersPtr	javascriptcore/jsstringref.html#JSStringGetCharactersPtr,JSStringRef	proc JSStringGetCharactersPtr(str: JSStringRef): ptr JSChar		34
+nim	JSStringGetMaximumUTF8CStringSize	javascriptcore/jsstringref.html#JSStringGetMaximumUTF8CStringSize,JSStringRef	proc JSStringGetMaximumUTF8CStringSize(str: JSStringRef): csize_t		37
+nim	JSStringGetUTF8CString	javascriptcore/jsstringref.html#JSStringGetUTF8CString,JSStringRef,cstring,csize_t	proc JSStringGetUTF8CString(str: JSStringRef; buffer: cstring; bufferSize: csize_t): csize_t		40
+nim	JSStringIsEqual	javascriptcore/jsstringref.html#JSStringIsEqual,JSStringRef,JSStringRef	proc JSStringIsEqual(a, b: JSStringRef): bool		45
+nim	JSStringIsEqualToUTF8CString	javascriptcore/jsstringref.html#JSStringIsEqualToUTF8CString,JSStringRef,cstring	proc JSStringIsEqualToUTF8CString(a: JSStringRef; b: cstring): bool		48
